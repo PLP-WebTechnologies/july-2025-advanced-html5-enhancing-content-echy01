@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Enhanced Content & Forms</title>
+</head>
+<body>
+
+    <header>
+        <h1>Our Product Showcase & Contact Form</h1>
+        <p>Explore our product offerings and get in touch with us using the form below.</p>
+    </header>
+
+    <main>
+
+        <section id="products">
+            <h2>Our Top Products</h2>
+            <p>Here are some of our most popular items, organized for clarity.</p>
+
+            <h3>Key Features List</h3>
+            <p>Our top product, the "Quantum Synthesizer," has the following features:</p>
+            <ul>
+                <li>Seamless wireless connectivity</li>
+                <li>Long-lasting battery life</li>
+                <li>Intuitive user interface</li>
+                <li>Lightweight and portable design</li>
+            </ul>
+
+            <h3>Customer Reviews Table</h3>
+            <p>Read what our customers are saying about our service:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Product Purchased</th>
+                        <th>Rating</th>
+                        <th>Review Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>Quantum Synthesizer</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>"The best synthesizer I've ever owned!"</td>
+                    </tr>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>Acoustic Echo Pedal</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>"Great sound quality, just what I needed."</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Product Showcase</h3>
+            <p>Watch this short video to see the Quantum Synthesizer in action:</p>
+            <figure>
+                <video controls width="560" poster="placeholder-video-thumbnail.jpg">
+                    <source src="sample-video.mp4" type="video/mp4">
+                    <track kind="captions" src="sample-video-captions.vtt" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>A promotional video for the Quantum Synthesizer.</figcaption>
+            </figure>
+            
+            <p>Listen to an audio sample:</p>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Fill out the form below to inquire about our products or services.</p>
+
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Your Personal Information</legend>
+                    <p>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full_name" placeholder="John Doe" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Inquiry</legend>
+                    <p>
+                        <label for="inquiry-type">Reason for Inquiry:</label>
+                        <select id="inquiry-type" name="inquiry_type" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="general">General Question</option>
+                            <option value="product-support">Product Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="35" minlength="10" placeholder="Type your message here..." required></textarea>
+                    </p>
+                    <p>
+                        <label for="subscribe">
+                            <input type="checkbox" id="subscribe" name="subscribe" checked>
+                            Subscribe to our newsletter
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Security Check</legend>
+                    <p>
+                        <label for="security-code">Enter the code:</label>
+                        <input type="text" id="security-code" name="security_code" value="SDF45J" readonly>
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2023 HTML5 Forms & Content</small></p>
+    </footer>
+
+</body>
+</html>
